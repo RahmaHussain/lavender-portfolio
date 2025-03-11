@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-primary: sans;
+    --font-family-secondary: mono;
+
+    --font-weight: ;
+
+}
+
+/* media-qiery */
+
+
+
+body {
+    background-color: aliceblue;
+    margin: 0%;
+
+}
+
+img {
+    display: block;
+    max-width: 100% ;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {
+
+}
+
+.logo {
+    height: auto;
+    width: 100px;
+    padding: 5px
+}
