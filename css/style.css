@@ -154,7 +154,7 @@ strong {
     padding: 1em;
 }
 .logo{
-    max-width: 100px;
+    max-width: 250px;
 
 }
 
@@ -165,10 +165,25 @@ strong {
     text-decoration: none;
 }
 
+
+
 .nav__link:hover {
     text-decoration: underline;
     color: var(--clr-accent);
 }
+
+.nav-toggle {
+    padding: .25em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+
+}
+
 .nav {
     position: fixed;
     background: var(--clr-dark);
@@ -194,6 +209,34 @@ strong {
     padding: 0;
     
 }
+
+
+/* humburger */
+
+.humburger {
+    display: block;
+    position: relative;
+    
+}
+.humburger,
+.humburger::before,
+.humburger::after {
+    
+    background: var(--clr-accent);
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 2em;
+    height: 3px;
+    background: inherit;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.humburger::before {top: 6px;}
+.humburger::after { bottom: 6px;}
 
 /* Intro Section */
 
