@@ -62,6 +62,24 @@ section {
     padding: 5em 2em;
 }
 
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 
 /* Typograpgy */
 h1,
@@ -171,4 +189,56 @@ nav {
    position: relative;
    left: -1.5em;
    width: calc(100% + 1.5em);
+}
+
+/* Services */
+
+.section__subtitle--services {
+    background-color: var(--clr-accent-dark);
+    color: var(--clr-light);
+    /* font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    padding: .25em 1em; */
+}
+
+.my__services {
+   background-color: var(--clr-dark);
+   background-image: url('../img/services-bg.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+   color: var(--clr-light);
+   text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1500px;
+        max-width: 0 auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
+
 }
